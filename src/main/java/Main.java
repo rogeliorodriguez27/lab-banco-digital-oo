@@ -5,7 +5,7 @@ public class Main {
 		Cliente venilton = new Cliente("Venilton", "12345678110");
 
 		Conta cc = new ContaCorrente(venilton);
-		Conta poupanca = new ContaPoupanca(venilton);
+		Conta poupanca = new ContaPoupanca(venilton, 5);
 
 		cc.depositar(100);
 		cc.transferir(100, poupanca);
